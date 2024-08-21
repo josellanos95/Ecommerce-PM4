@@ -8,7 +8,7 @@ const Footer = () => {
           <div>
             <a href="#" className="flex items-center mb-4">
               <img
-                src="/PruebaLogo.jpg"
+                src="/Store.svg"
                 className="h-8 mr-2"
                 alt="Logo"
               />

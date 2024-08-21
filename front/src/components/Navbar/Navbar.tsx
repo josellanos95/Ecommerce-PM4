@@ -36,7 +36,7 @@ const Navbar = () => {
           <Link href="/">
             <div className="flex items-center space-x-3 rtl:space-x-reverse">
               <img
-                src="PruebaLogo.jpg"
+                src="Store.svg"
                 className="h-8"
                 alt="Logo"
               />

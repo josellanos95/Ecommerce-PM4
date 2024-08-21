@@ -20,7 +20,7 @@ const productsToPreLoad: IProduct[] = [
     categoryId: 1,
     stock: 15
 },
-// Tablets
+
 {
     name: "iPad Air",
     price: 599,

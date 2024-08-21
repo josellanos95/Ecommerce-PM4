@@ -36,6 +36,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       const response = await register(dataUser);
       router.push("/login");
     } catch (error: any) {
+      console.log(error.message);
       throw new Error(error.message);   
     }
   };
