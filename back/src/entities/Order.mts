@@ -7,8 +7,8 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn,
 } from "typeorm";
-import { User } from "./User";
-import { Product } from "./Product";
+import { User } from "./User.mjs";
+import { Product } from "./Product.mjs";
 
 // status: pending, approved, rejected
 

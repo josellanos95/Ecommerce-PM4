@@ -25,9 +25,9 @@
     // "moduleDetection": "auto",                        /* Control what method is used to detect module-format JS files. */
 
     /* Modules */
-    "module": "commonjs",                                /* Specify what module code is generated. */
+    "module": "ESNext",                                /* Specify what module code is generated. */
     "rootDir": "./src",                                /* Specify the root folder within your source files. */
-    // "moduleResolution": "node10",                     /* Specify how TypeScript looks up a file from a given module specifier. */
+    "moduleResolution": "node",                   /* Specify how TypeScript looks up a file from a given module specifier. */
     // "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
     // "paths": {},                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
@@ -106,6 +106,6 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "src/index.mts", "src/server.mts", "src/routes/index.mts", "src/routes/orders.router.mts", "src/routes/products.router.mts", "src/routes/users.router.mts", "src/repositories/category.respository.mts", "src/repositories/credential.repository.mts", "src/repositories/order.repository.mts", "src/repositories/product.repository.mts", "src/repositories/user.repository.mts", "src/middlewares/checkLogin.middleware.mts", "src/middlewares/orderCreate.middleware.mts", "src/middlewares/userLogin.middleware.mts", "src/middlewares/userRegister.middleware.mts", "src/helpers/preLoadCategories.mts", "src/helpers/preLoadProducts.mts", "src/entities/Category.mts", "src/entities/Credential.mts", "src/entities/Order.mts", "src/entities/Product.mts", "src/entities/User.mts", "src/dtos/createCredentialDto.mts", "src/dtos/createOrderDto.mts", "src/dtos/loginUser.dto.mts", "src/dtos/registerUser.dto.mts", "src/controllers/user.controller.mts", "src/controllers/product.controller.mts", "src/controllers/order.controller.mts", "src/config/envs.mts", "src/config/dataSource.mts", "src/services/credential.service.mts", "src/services/order.service.mts", "src/services/products.service.mts", "src/services/user.service.mts"],
   "exclude": ["node_modules"]
 }

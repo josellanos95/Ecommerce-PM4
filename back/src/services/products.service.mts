@@ -1,5 +1,5 @@
-import { Product } from "../entities/Product";
-import { ProductRepository } from "../repositories/product.repository";
+import { Product } from "../entities/Product.mjs";
+import { ProductRepository } from "../repositories/product.repository.mjs";
 
 export const checkProductExists = async (itemId: number): Promise<boolean> => {
   const item: Product | null = await ProductRepository.findOneBy({

@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { createOrderService } from "../services/order.service";
+import { createOrderService } from "../services/order.service.mjs";
 import { catchedController } from "../utils/catchedController";
 
 export const createOrder = catchedController(

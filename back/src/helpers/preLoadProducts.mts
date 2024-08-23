@@ -1,6 +1,6 @@
-import { AppDataSource } from "../config/dataSource";
-import { Product } from "../entities/Product";
-import { ProductRepository } from "../repositories/product.repository";
+import { AppDataSource } from "../config/dataSource.mjs";
+import { Product } from "../entities/Product.mjs";
+import { ProductRepository } from "../repositories/product.repository.mjs";
 
 interface IProduct {
   name: string;

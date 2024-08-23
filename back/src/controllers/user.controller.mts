@@ -3,7 +3,7 @@ import { catchedController } from "../utils/catchedController";
 import {
   loginUserService,
   registerUserService,
-} from "../services/user.service";
+} from "../services/user.service.mjs";
 
 export const registerUser = catchedController(
   async (req: Request, res: Response) => {

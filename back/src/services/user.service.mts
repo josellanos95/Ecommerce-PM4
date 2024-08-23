@@ -1,14 +1,14 @@
-import LoginUserDto from "../dtos/loginUser.dto";
-import RegisterUserDto from "../dtos/registerUser.dto";
-import { User } from "../entities/User";
-import { UserRepository } from "../repositories/user.repository";
+import LoginUserDto from "../dtos/loginUser.dto.mjs";
+import RegisterUserDto from "../dtos/registerUser.dto.mjs";
+import { User } from "../entities/User.mjs";
+import { UserRepository } from "../repositories/user.repository.mjs";
 import { ClientError } from "../utils/errors";
 import {
   checkPasswordService,
   createCredentialService,
-} from "./credential.service";
+} from "./credential.service.mjs";
 import jwt from "jsonwebtoken";
-import { JWT_SECRET } from "../config/envs";
+import { JWT_SECRET } from "../config/envs.mjs";
 
 export const checkUserExists = async (email: string): Promise<boolean> => {
   const user = await UserRepository.findOneBy({ email });
