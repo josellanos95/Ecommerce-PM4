@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:3000'
+const apiUrl = process.env.NEXT_PUBLIC_API_URL
 import { IProduct } from "@/types";
 import products from "./products";
 

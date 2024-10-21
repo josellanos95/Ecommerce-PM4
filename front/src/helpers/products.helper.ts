@@ -1,5 +1,5 @@
 import { IProduct } from "../types/index";
-export const apiUrl = 'http://localhost:3000';
+export const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 export async function getProductsDB() {
  try {

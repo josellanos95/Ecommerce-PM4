@@ -1,6 +1,6 @@
 import { RegisterProps, LoginProps } from "@/types";
 import swal from 'sweetalert2';
-const apiUrl = 'http://localhost:3000'
+const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
 
 export async function register (userData: RegisterProps) {
