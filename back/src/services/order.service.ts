@@ -1,8 +1,8 @@
-import { CreateOrderDto } from "../dtos/createOrderDto.mjs";
-import { Order } from "../entities/Order.mjs";
-import { OrderRepository } from "../repositories/order.repository.mjs";
-import { ProductRepository } from "../repositories/product.repository.mjs";
-import { UserRepository } from "../repositories/user.repository.mjs";
+import { CreateOrderDto } from "../dtos/createOrderDto";
+import { Order } from "../entities/Order";
+import { OrderRepository } from "../repositories/order.repository";
+import { ProductRepository } from "../repositories/product.repository";
+import { UserRepository } from "../repositories/user.repository";
 
 export const createOrderService = async (
   createOrderDto: CreateOrderDto

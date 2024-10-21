@@ -1,6 +1,6 @@
 import { AppDataSource } from "../config/dataSource";
-import { Product } from "../entities/Product.js";
-import { ProductRepository } from "../repositories/product.repository.js";
+import { Product } from "../entities/Product";
+import { ProductRepository } from "../repositories/product.repository";
 
 interface IProduct {
   name: string;
@@ -20,7 +20,7 @@ const productsToPreLoad: IProduct[] = [
     categoryId: 1,
     stock: 15
 },
-
+// Tablets
 {
     name: "iPad Air",
     price: 599,

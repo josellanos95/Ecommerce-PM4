@@ -1,7 +1,7 @@
 import bcrypt from "bcrypt";
-import CreateCredentialDto from "../dtos/createCredentialDto.mjs";
-import { CredentialRepository } from "../repositories/credential.repository.mjs";
-import { Credential } from "../entities/Credential.mjs";
+import CreateCredentialDto from "../dtos/createCredentialDto";
+import { CredentialRepository } from "../repositories/credential.repository";
+import { Credential } from "../entities/Credential";
 // ...
 
 export const createCredentialService = async (credentialDto: CreateCredentialDto): Promise<Credential> => {

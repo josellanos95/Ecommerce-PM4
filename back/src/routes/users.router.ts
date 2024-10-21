@@ -1,9 +1,9 @@
 import { Request, Response, Router } from "express";
-import validateUserRegister from "../middlewares/userRegister.middleware.mjs";
-import validateUserLogin from "../middlewares/userLogin.middleware.mjs";
-import { login, registerUser } from "../controllers/user.controller.mjs";
-import checkLogin from "../middlewares/checkLogin.middleware.mjs";
-import { OrderRepository } from "../repositories/order.repository.mjs";
+import validateUserRegister from "../middlewares/userRegister.middleware";
+import validateUserLogin from "../middlewares/userLogin.middleware";
+import { login, registerUser } from "../controllers/user.controller";
+import checkLogin from "../middlewares/checkLogin.middleware";
+import { OrderRepository } from "../repositories/order.repository";
 
 const usersRouter = Router();
 

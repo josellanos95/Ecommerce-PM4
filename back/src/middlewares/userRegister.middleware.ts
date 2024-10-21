@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { checkUserExists } from "../services/user.service.mjs";
+import { checkUserExists } from "../services/user.service";
 import { ClientError } from "../utils/errors";
 
 const validateUserRegister = (

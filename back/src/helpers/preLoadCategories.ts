@@ -1,6 +1,6 @@
 import { AppDataSource } from "../config/dataSource";
-import { Category } from "../entities/Category.js";
-import { CategoryRepository } from "../repositories/category.respository.js";
+import { Category } from "../entities/Category";
+import { CategoryRepository } from "../repositories/category.respository";
 
 interface ICategory {
     name: string;

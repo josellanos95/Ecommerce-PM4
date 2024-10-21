@@ -1,6 +1,6 @@
 import { Column, Entity, JoinColumn, OneToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
-import { Credential } from "./Credential.mjs";
-import { Order } from "./Order.mjs";
+import { Credential } from "./Credential";
+import { Order } from "./Order";
 
 enum Role {
     ADMIN = "admin",
