@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import Image from 'next/image'
 
 const AboutUsPage = () => {
   return (
@@ -21,10 +22,11 @@ const AboutUsPage = () => {
               </p>
             </div>
             <div className="relative pb-48 overflow-hidden">
-              <img
+              <Image
                 className="absolute inset-0 h-full w-full object-cover"
                 src="/tiendaimg.png"
                 alt="Sobre Nosotros"
+                fill
               />
             </div>
           </div>

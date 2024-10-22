@@ -2,6 +2,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import { userSession } from '@/types'
+import Image from "next/image";
 
 const Dashboard = () => {
   const [userData, setUserData] = useState<userSession>()
@@ -27,10 +28,11 @@ const Dashboard = () => {
               <p className="text-gray-700 mb-2"><strong>Dirección:</strong> {userData?.userData.address}</p>
             </div>
             <div className="relative pb-48 overflow-hidden">
-              <img
+              <Image
                 className="absolute inset-0 h-full w-full object-cover"
                 src="https://ui-avatars.com/api/?name=Jose+Llanos"
                 alt="Avatar de usuario"
+                fill
               />
             </div>
           </div>

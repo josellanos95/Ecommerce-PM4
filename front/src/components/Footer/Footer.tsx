@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image'
+import StoreSvg from "../../../public/Store.svg"
 
 const Footer = () => {
   return (
@@ -7,10 +9,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-white">
           <div>
             <a href="#" className="flex items-center mb-4">
-              <img
-                src="/Store.svg"
-                className="h-8 mr-2"
-                alt="Logo"
+            <Image
+                src={StoreSvg}
+                alt="Store"
+                width={50} // Ajusta el ancho según sea necesario
+                height={50} // Ajusta la altura según sea necesario
               />
               <span className="text-2xl font-bold">TechShop</span>
             </a>

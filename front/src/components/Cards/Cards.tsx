@@ -7,9 +7,9 @@ const Cards = ({ products }: {products: IProduct[] }) => {
   return (
     <div className="bg-blue-100 min-h-screen py-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
           {products.map((product) => (
-            <Link key={product.id} href={`/product/${product.id}`}>
+            <Link key={product.id} href={`/product/${product.id}`} className="block">
               <Card key={product.id} {...product} />
             </Link>
           ))}
